@@ -7,11 +7,11 @@ hero:
   tagline: Подробно рассказываем про функционал сервиса, даём полезные советы
   actions:
     - theme: brand
-      text: Обучение
-      link: /ru/getting-started/
+      text: Работа с сервисом
+      link: /ru/docs/
     - theme: alt
-      text: Публичное API
-      link: /en/api/
+      text: Для разработчиков
+      link: /ru/tech/
 
 features:
   - icon: 🛠️
@@ -28,35 +28,24 @@ features:
 ## Команда разработчиков
 
 <script setup>
-import { VPTeamMembers } from 'vitepress/theme'
+import { VPTeamMembers } from 'vitepress/theme';
+import { withBase, useData } from 'vitepress';
 
 const members = [
   {
-    avatar: 'https://www.github.com/yyx990803.png',
-    name: 'Владимир Хуган',
-    title: 'Founder',
-    links: [
-      { icon: 'github', link: 'https://github.com/yyx990803' },
-      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
-    ]
+    avatar: '/assets/founders/hougan.jpg',
+    name: 'Hougan',
+    title: 'CTO',
   },
   {
-    avatar: 'https://www.github.com/yyx990803.png',
-    name: 'Ольга Куцкова',
-    title: 'Founder',
-    links: [
-      { icon: 'github', link: 'https://github.com/yyx990803' },
-      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
-    ]
+    avatar: '/assets/founders/olkuts.jpg',
+    name: 'Olkuts',
+    title: 'Software Engineer',
   },
   {
-    avatar: 'https://www.github.com/yyx990803.png',
+    avatar: '/assets/founders/xacku.jpg',
     name: 'Xacku',
-    title: 'Founder',
-    links: [
-      { icon: 'github', link: 'https://github.com/yyx990803' },
-      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
-    ]
+    title: 'СEO',
   },
 ];
 

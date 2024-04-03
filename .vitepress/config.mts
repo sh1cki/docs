@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
-import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
+import { generateSidebar } from 'vitepress-sidebar';
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -19,12 +20,39 @@ export default defineConfig({
   },
   themeConfig: {
     i18nRouting: true,
+    logo: { src: '/assets/favicon.ico' },
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/ru/' },
+      { text: 'Обзор', link: '/ru/base-features' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
+
+    sidebar: generateSidebar([{
+      resolvePath: '/en/',
+      scanStartPath: 'en',
+
+      useTitleFromFileHeading: true,
+      useFolderTitleFromIndexFile: true,
+
+      includeFolderIndexFile: false,
+      includeRootIndexFile: false,
+      
+      sortMenusByFrontmatterOrder: true,
+      frontmatterOrderDefaultValue: 5
+    }, {
+      resolvePath: '/ru/',
+      scanStartPath: 'ru',
+
+      useTitleFromFileHeading: true,
+      useFolderTitleFromIndexFile: true,
+
+      includeFolderIndexFile: false,
+      includeRootIndexFile: false,
+      
+      sortMenusByFrontmatterOrder: true,
+      frontmatterOrderDefaultValue: 5
+    }]),
 
     search: { provider: 'local' },
 
@@ -33,36 +61,29 @@ export default defineConfig({
     ],
   },
 
+  /**
+   * 
   vite: {
     plugins: [
       // add plugin
       AutoSidebar({
         path: '/',
         titleFromFile: true,
-        ignoreIndexItem: true,
-        ignoreList: ['node_modules', '.vitepress', '.git'],
+        ignoreList: ['node_modules', '.vitepress', '.git', 'en'],
         sideBarResolved: (data) => { 
           Object.keys(data).forEach((lang) => {
             if (lang != '/en/' && lang != '/ru/') {
               return;
             }
 
-            const translations: Record<string, { en: string, ru: string }> = {
-              'getting-started': {
-                ru: 'Начало работы',
-                en: 'Getting started'
-              }
-            }
-
             const elements = data[lang][0].items as any[];
 
-            elements.forEach(v => {
-              const title = v.text;
-              if (!translations[title]) {
+            elements.forEach(el => {
+              if (!el.items) {
                 return;
               }
-  
-              v.text = translations[title][lang == '/en/' ? 'en' : 'ru'];
+
+              console.log(el.items);
             });
           });
 
@@ -71,4 +92,5 @@ export default defineConfig({
       })
     ]
   }
+   */
 })

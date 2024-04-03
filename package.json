@@ -1,11 +1,16 @@
 {
   "devDependencies": {
     "vite-plugin-vitepress-auto-sidebar": "^1.6.3",
-    "vitepress": "^1.0.2"
+    "vitepress": "1.0.2",
+    "vitepress-plugin-auto-sidebar": "^1.1.0",
+    "vitepress-sidebar": "^1.22.0"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@stuyk/vitepress-sidebar-builder": "^1.0.2"
   }
 }

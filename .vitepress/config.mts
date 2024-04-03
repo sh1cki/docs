@@ -60,37 +60,4 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/rust-app-io' },
     ],
   },
-
-  /**
-   * 
-  vite: {
-    plugins: [
-      // add plugin
-      AutoSidebar({
-        path: '/',
-        titleFromFile: true,
-        ignoreList: ['node_modules', '.vitepress', '.git', 'en'],
-        sideBarResolved: (data) => { 
-          Object.keys(data).forEach((lang) => {
-            if (lang != '/en/' && lang != '/ru/') {
-              return;
-            }
-
-            const elements = data[lang][0].items as any[];
-
-            elements.forEach(el => {
-              if (!el.items) {
-                return;
-              }
-
-              console.log(el.items);
-            });
-          });
-
-          return data;
-        },
-      })
-    ]
-  }
-   */
 })

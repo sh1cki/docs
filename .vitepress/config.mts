@@ -32,8 +32,6 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/rust-app-io' },
     ],
   },
-  
-  appearance: 'force-dark',
 
   vite: {
     plugins: [

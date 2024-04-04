@@ -1,0 +1,6 @@
+img[src*="#icon"] {
+  display: inline-flex;
+  width:20px;
+  height:20px;
+  margin-bottom: -2.5px;
+}

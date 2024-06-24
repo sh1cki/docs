@@ -27,10 +27,10 @@ order: 1
   "[Ban] Enable broadcast server bans": true,
   "[Ban] Ban broadcast format": "Игрок <color=#55AAFF>%TARGET%</color> <color=#bdbdbd></color>был заблокирован.\n<size=12>- причина: <color=#d3d3d3>%REASON%</color></size>",
   "[Ban] Kick message format (%REASON% - ban reason)": "Вы забанены на этом сервере, причина: %REASON%",
-  "[Ban] Kick message format temporary (%REASON% - ban reason)": "Вы забанены на этом сервере до %TIME%, причина: %REASON%",
+  "[Ban] Kick message format temporary (%REASON% - ban reason, %TIME% - unban date)": "Вы забанены на этом сервере до %TIME%, причина: %REASON%",
   "[Ban] Message format when kicking due to IP": "Вам ограничен вход на сервер!",
   "[Ban-Sync] Kick message format (%REASON% - ban reason)": "Вы навсегда забанены на этом сервере причина: %REASON%",
-  "[Ban-Sync] Kick message format temporary (%REASON% - ban reason)": "Вы забанены на этом сервере до %TIME% МСК, причина: %REASON%",
+  "[Ban-Sync] Kick message format temporary (%REASON% - ban reason, %TIME% - unban date)": "Вы забанены на этом сервере до %TIME% МСК, причина: %REASON%",
   // Если вас пугает выполнение команд через сайт - выключите этот параметр // [!code highlight]
   // тогда это станет абсолютно невозможно // [!code highlight]
   "[Custom Actions] Allow custom actions": true // [!code highlight]

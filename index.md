@@ -28,6 +28,10 @@ features:
 import { VPTeamMembers } from 'vitepress/theme';
 import { withBase, useData } from 'vitepress';
 
+import hougan from './assets/founders/hougan.jpg';
+import olkuts from './assets/founders/olkuts.jpg';
+import xacku from './assets/founders/xacku.jpg';
+
 const members = [
   {
     avatar: '/assets/founders/hougan.jpg',
@@ -35,12 +39,12 @@ const members = [
     title: 'CTO',
   },
   {
-    avatar: '/assets/founders/olkuts.jpg',
+    avatar: olkuts,
     name: 'Olkuts',
     title: 'Software Engineer',
   },
   {
-    avatar: '/assets/founders/xacku.jpg',
+    avatar: xacku,
     name: 'Xacku',
     title: 'СEO',
   },

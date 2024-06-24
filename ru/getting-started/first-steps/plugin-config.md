@@ -6,7 +6,7 @@ order: 1
 
 ## Где настроить плагин?
 Конфигурация плагина находится в `/oxide/config/RustApp.json`
-```c#
+```json
 {
   "[UI] Chat commands": [
     "report"

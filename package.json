@@ -5,7 +5,7 @@
     "vitepress-sidebar": "^1.22.0"
   },
   "scripts": {
-    "docs:dev": "concurrently --kill-others \"nodemon move-header\" \"vitepress dev\"",
+    "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },

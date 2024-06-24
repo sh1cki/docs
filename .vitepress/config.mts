@@ -30,7 +30,7 @@ export default defineConfig({
   },
   themeConfig: {
     i18nRouting: true,
-    logo: { src: '/public/favicon.ico' },
+    logo: { src: '/favicon.ico' },
     
 
     sidebar: generateSidebar([/*{

@@ -7,45 +7,13 @@ export default defineConfig({
   
   description: "Docs for RustApp",
   locales: {
-    /*root: {
-      label: 'Русский',
-      lang: 'ru',
-      link: '/ru',
-      themeConfig: {
-        nav: [
-          { text: 'Обзор функций', link: '/ru/base-features' },
-        ],
-      }
-    },*/
-    /*en: {
-      label: 'English',
-      lang: 'en',
-      link: '/en',
-      themeConfig: {
-        nav: [
-          { text: 'Base features', link: '/en/base-features' },
-        ],
-      }
-    },*/
   },
   themeConfig: {
     i18nRouting: true,
     logo: { src: '/favicon.ico' },
     
 
-    sidebar: generateSidebar([/*{
-      resolvePath: '/en/',
-      scanStartPath: 'en',
-
-      useTitleFromFileHeading: true,
-      useFolderTitleFromIndexFile: true,
-
-      includeFolderIndexFile: false,
-      includeRootIndexFile: false,
-      
-      sortMenusByFrontmatterOrder: true,
-      frontmatterOrderDefaultValue: 5
-    }, */{
+    sidebar: generateSidebar([{
       resolvePath: '/ru/',
       scanStartPath: 'ru',
 

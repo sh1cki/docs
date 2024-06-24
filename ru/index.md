@@ -8,10 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Работа с сервисом
-      link: /ru/docs/
-    - theme: alt
-      text: Для разработчиков
-      link: /ru/tech/
+      link: /ru/getting-started/getting-started
 
 features:
   - icon: 🛠️

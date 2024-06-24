@@ -5,28 +5,33 @@ import { generateSidebar } from 'vitepress-sidebar';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Rust App",
+  
   description: "Docs for RustApp",
   locales: {
     root: {
       label: 'Русский',
       lang: 'ru',
       link: '/ru',
+      themeConfig: {
+        nav: [
+          { text: 'Обзор функций', link: '/ru/base-features' },
+        ],
+      }
     },
     en: {
       label: 'English',
       lang: 'en',
       link: '/en',
+      themeConfig: {
+        nav: [
+          { text: 'Base features', link: '/en/base-features' },
+        ],
+      }
     },
   },
   themeConfig: {
     i18nRouting: true,
     logo: { src: '/assets/favicon.ico' },
-
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Обзор', link: '/ru/base-features' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
 
     sidebar: generateSidebar([{
       resolvePath: '/en/',

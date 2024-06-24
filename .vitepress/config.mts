@@ -8,7 +8,7 @@ export default defineConfig({
   
   description: "Docs for RustApp",
   locales: {
-    root: {
+    /*root: {
       label: 'Русский',
       lang: 'ru',
       link: '/ru',
@@ -17,8 +17,8 @@ export default defineConfig({
           { text: 'Обзор функций', link: '/ru/base-features' },
         ],
       }
-    },
-    en: {
+    },*/
+    /*en: {
       label: 'English',
       lang: 'en',
       link: '/en',
@@ -27,13 +27,13 @@ export default defineConfig({
           { text: 'Base features', link: '/en/base-features' },
         ],
       }
-    },
+    },*/
   },
   themeConfig: {
     i18nRouting: true,
     logo: { src: '/assets/favicon.ico' },
 
-    sidebar: generateSidebar([{
+    sidebar: generateSidebar([/*{
       resolvePath: '/en/',
       scanStartPath: 'en',
 
@@ -45,7 +45,7 @@ export default defineConfig({
       
       sortMenusByFrontmatterOrder: true,
       frontmatterOrderDefaultValue: 5
-    }, {
+    }, */{
       resolvePath: '/ru/',
       scanStartPath: 'ru',
 

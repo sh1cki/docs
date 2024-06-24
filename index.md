@@ -22,9 +22,12 @@ features:
     details: Следите за статистикой, подсчитывайте ЗП, отслеживайте действия
 ---
 
-## Команда разработчиков
+<!--
+## Команда разработчиков-->
 
 <script setup>
+  /**
+   * 
 import { VPTeamMembers } from 'vitepress/theme';
 import { withBase, useData } from 'vitepress';
 
@@ -34,7 +37,7 @@ import xacku from './assets/founders/xacku.jpg';
 
 const members = [
   {
-    avatar: '/assets/founders/hougan.jpg',
+    avatar: hougan,
     name: 'Hougan',
     title: 'CTO',
   },
@@ -50,11 +53,12 @@ const members = [
   },
 ];
 
-
 const shuffled = members
     .map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value)
+   */
 </script>
 
-<VPTeamMembers size="small" :members="shuffled" />
+<!--
+<VPTeamMembers size="small" :members="shuffled" />-->

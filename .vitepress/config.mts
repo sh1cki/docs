@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar';
 
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Rust App",
@@ -31,7 +30,7 @@ export default defineConfig({
   },
   themeConfig: {
     i18nRouting: true,
-    logo: { src: '/assets/favicon.ico' },
+    logo: { src: './assets/logo.png' },
 
     sidebar: generateSidebar([/*{
       resolvePath: '/en/',

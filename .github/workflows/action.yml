@@ -19,5 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+      - name: Move headers
+        run: node move-header.js
       - name: Build application
         run: npm run docs:build

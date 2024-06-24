@@ -6,7 +6,7 @@
   },
   "scripts": {
     "docs:dev": "concurrently --kill-others \"nodemon move-header\" \"vitepress dev\"",
-    "docs:build": "concurrently --kill-others \"nodemon move-header\" \"vitepress build\"",
+    "docs:build": "concurrently --kill-others \"node move-header.js\" \"vitepress build\"",
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
